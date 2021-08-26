@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* User Styles */
+.preloader{
+  position:fixed; 
+  left:0px; top:0px; 
+  width:100%; height: 100%; 
+  z-index: 99999; 
+  background: url('loader.gif') center no-repeat #ffffff29;
+}
+#loader{
+  display: none;
+}
+.show_loader{
+  display: block!important;
+}
+.hide_loader{
+  display: none!important;
+}
+.Search_and_result_container{
+  height: 30em;
+    min-height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#serch_box, #result_table{
+  padding: calc(8px + (12 - 8) * ((100vw - 320px) / (1600 - 320))) calc(25px + (60 - 25) * ((100vw - 320px) / (1600 - 320)));
+}
+#serch_box .input-group{
+  box-shadow: 1px 5px 9px 1px #0005;
+  height: 55px;
+}
+#serch_box .input-group input{
+  height: auto;
+}
+#serch_box button{
+  height: 55px;
+}
+#serch_box button i{
+  padding-right: 5px;
+}
+.search_btn{
+  background-color: #034646;
+  font-weight: 600;
+  padding-left: calc(12px + (30 - 12) * ((100vw - 320px) / (1600 - 320)));
+  padding-right: calc(12px + (30 - 12) * ((100vw - 320px) / (1600 - 320)));
+}
+.header{
+  background-color: #034646;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.header h1{
+  font-size: calc(22px + (32 - 22) * ((100vw - 320px) / (1600 - 320)));
+}
+.Showing_res_text_found, .Showing_res_text_notfound{
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+}
+.Showing_res_text_found{
+  color: rgb(31, 95, 5);
+}
+.Showing_res_text_notfound{
+  color: rgb(145, 6, 6);
+}
+.table_parent_box{
+  position: relative;
+  overflow: auto;
+}
+#countries_table th{
+  text-transform: uppercase;
+  background-color: blanchedalmond;
+}
